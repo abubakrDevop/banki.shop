@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.main {
+    width: 100%;
+    min-height: 75vh;
+    font-family: 'Merriweather', serif;
+    padding: 40px 95px 0 95px;
+
+    .main_headtitle {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #343030;
+    }
+
+    .main_cards_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center space-between;
+        margin: 20px 0 0 0;
+
+        .card {
+            border: solid 1px #E1E1E1;
+            margin: 4px;
+
+            .card_image {
+                width: 280px;
+                height: 160px;
+            }
+
+            .card_footer {
+                padding: 0 20px 20px 20px;
+            }
+
+            .card_name {
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #343030;
+                margin: 10px 0 10px 0;
+            }
+
+            .card_price_btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+
+                .card_price {
+                    display: inherit;
+                    flex-direction: column;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #343030;
+                }
+
+                .card_price_was {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #A0A0A0;
+                    text-decoration-line: line-through;
+                }
+
+                .card_sold {
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #343030;
+                    left: -58px;
+                }
+
+                .card_buy {
+                    width: 118px;
+                    height: 48px;
+                    background: #382E2B;
+                    color: #F4F6F9;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: 'Merriweather', serif;
+                    transition: .5s;
+                    &:hover {
+                        background: #776763;
+                    }
+                }
+
+                .card_loading_box {
+                    position: relative;
+                    width: 118px;
+                    height: 48px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #382E2B;
+                    border: solid 1px #adabab;
+
+                    .card_loading {
+                        width: 140px;
+                        height: 60px;
+                    }
+                }
+
+                .card_cart {
+                    position: relative;
+                    width: 118px;
+                    height: 48px;
+                    background: #5B3A32;
+                    color: #F4F6F9;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: 'Merriweather', serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 9px;
+                    overflow: hidden;
+                    cursor: not-allowed;
+
+                    .card_icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

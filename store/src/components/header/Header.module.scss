@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.header {
+    width: 100%;
+    height: 96px;
+    border-bottom: solid 1px #E1E1E1;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 95px;
+
+    .header__menu {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu_item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #343030;
+            text-decoration: none;
+        }
+    }
+
+    .header__searchbox {
+        .searchbox_search {
+            width: 416px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+
+            .searchbox_search_input {
+                width: 71%;
+                height: 100%;
+                border: solid 1px #E1E1E1;
+                padding: 0 0 0 15px;
+                font-family: 'Merriweather', serif;
+                font-size: 14px;
+                outline: none;
+
+                &::placeholder {
+                    color: #9F9F9F;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                &:focus {
+                    color: #505050;
+                }
+            }
+
+            .searchbox_search_button {
+                width: 122px;
+                height: 100%;
+                font-family: 'Merriweather', serif;
+                border: none;
+                background: #403432;
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFFFF;
+                transition: .5s;
+                &:hover {
+                    background: #776763;
+                }
+            }
+        }
+    }
+}
