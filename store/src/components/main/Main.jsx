@@ -57,14 +57,11 @@ export const Main = () => {
     setChangedCards(changedCards.map(item => item.id === id ? {...item, button: item.button = 'loading'} : item))
 		setTimeout(() => {
       setChangedCards(changedCards.map(item => item.id === id ? {...item, button: !item.button} : item))
+      localStorage.setItem('saveState', JSON.stringify(changedCards))
     }, 2500)
 
-    localStorage.setItem('saveState', JSON.stringify(changedCards))
+    const savedCards = JSON.parse(localStorage.getItem('saveState'))
 	}
-
-  const [{button}] = JSON.parse(localStorage.getItem('saveState'))
-
-  //нужно выташить состояние из локал и просто присвоить массиву
 
   return (
     <main className={cls.main}>

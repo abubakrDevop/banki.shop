@@ -31,7 +31,10 @@ export const menuLinks = [
   },
 ]
 
+export const handleSearch = (data) => {}
+
 export const Header = () => {
+
   return (
     <header className={cls.header}>
 
@@ -55,6 +58,7 @@ export const Header = () => {
             className={cls.searchbox_search_input} 
             type="text" 
             placeholder="Поиск по названию картины"
+            onChange={e => handleSearch(e.target.value)}
           />
           <button className={cls.searchbox_search_button}> Найти </button>
         </div>
